@@ -6,7 +6,7 @@ def toPermute(list, current, last):#takes a list, starting index and last index
     if last<0:
         print("")
     elif current == last:# if starting and last indexes will equalise then our function will be done
-	    print(''.join(list))
+	    print(''.join(list))#changes from list to string
     else:
 	    for i in range(current, last + 1):#permutating with recursion
 		    toSwap(list,current,i)
